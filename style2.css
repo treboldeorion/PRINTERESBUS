@@ -1,56 +1,246 @@
 body{
-    background-color: rgb(202, 189, 189);
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    background-color: (#fff);
+    margin: 10px;
+    padding: 10px;
 }
+
+li{list-style: none;
+}
+
 a{
     cursor: pointer;
     text-decoration: none;
-    color: rgb(59, 12, 12);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(33,25,34);
+    font-size: 12px;
+    height: 100%;
+    padding: 5px;
+
 }
+
+
+
+
+
+nav .Menu1 {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+nav { 
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+    
+    
+
+}
+
+nav .bus {
+
+    width: 450px;
+    height: 48px;
+    outline: none;
+    background-color: gray;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 1px 6px 0 #20212447;
+    
+}
+
+.lupa{
+    margin: 5px;
+}
+
+.flecha{
+    margin: 15px;
+    width: 50%;
+    height: 20%;
+
+
+}
+
+
+.finder{
+    
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-weight: normal;
+    height: 100%;
+    outline: none;
+    padding: 20px;
+    width: 500px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.finder:focus-within{
+    border: 3px solid aqua;
+    height: 100%;
+    width: 450px;
+    margin: 10px;
+    padding: -20px;
+    font-size: 15px;
+    
+}
+
+
+
 
 
 header{
     width: 100%;
-    height: 60px;
+    height: 10px;
 }
 
 nav .menu-icon{
-    background-image: url('https://cdn-icons-png.flaticon.com/512/129/129766.png?w=740&t=st=1685854816~exp=1685855416~hmac=10575e6588ece2215afc00fb26c53b2a47c3b22cd9fe5e39d7de2f1b71a98e47');
+    background-image: url('https://1000marcas.net/wp-content/uploads/2019/12/logo-Pinteres.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left -10px;
     background-size: contain;
-    padding: 25px;
-    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    flex-direction: row;
 
 }
+
+#inicio{
+    height: 50px;
+    width: 350px;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;  
+    border-radius: 150px;
+    padding-right: 10px;
+    margin: 10px;
+    border-radius: 150px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+button #inicio:hover{
+    border: 1px solid #dadce0;
+    color: black;
+    background-color: rgb(220, 212, 212);
+}
+
+#registro{
+    height: 46px;
+    width: 250px;
+    background-color: red;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;    
+    border-radius: 150px;
+    padding-right: 10px;
+    color: white;
+    margin: 10px;
+    border-radius: 150px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+button #registro:hover{
+    border: 1px solid #dadce0;
+    color: black;
+    background-color: rgb(220, 212, 212);}
+
 main{
-    background-color: #333;
-
+    column-count: 5;
+    width: 100%;
 }
+
+@media screen and (max-width:510px) {
+    main{
+        column-count: 1;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    main{
+        column-count: 5;
+    }
+    
+}
+@media screen and (min-width:1000px) {
+    main{
+        column-count: 3;
+    }
+    
+}
+
+@media screen and (min-width:510px) and (max-width:999px){
+    main{
+        column-count: 2;
+    }
+    
+}
+
+
+
 img{
     max-width: 100%;
     margin-bottom: 10px;
     display: block;
-    outline-offset: -10px;
-}
+    outline: 10px rgb(226, 50, 50);
+    border-radius: 20px;
+    cursor: zoom-in;
+    width: 250px;
+    margin: 5px;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
 
-li{
-    list-style-type: none;
-    margin: 10px;
-    padding: 5px;
-    text-decoration: none;
-    color: black;
+
 }
 
 .gallery{
-    columns: 4 200px;
-    column-gap: 1px;
-    grid-gap: 1rem;
+
+    display: flex;
+    width: 250px;
+    column-count:5;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    }
+
+.gallery img{
+    width: 250px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.gallery:hover>button{
+    visibility: visible;
 
 }
+
+.gallery button{
+    visibility: hidden;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 input{
 width: 100px;
@@ -59,35 +249,88 @@ margin-bottom: 35px;
 border-radius: 20px;
 }
 
-button{
+/*button{
 width: 100px;
 margin: 0 auto;
 margin-bottom: 35px;
 border-radius: 20px;
-transition: 2s;
+}*/
+
+#save{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    top: 20px;
+    right: 15px;
+    color: #fff;
+    position: absolute;
+    border-radius: 25px;
+    border: none;
+    background-color:rgb(161, 155, 155);
 }
 
-button:hover{
-    color: rgb(255, 0, 0);
-    opacity: 1;
-    margin-top: 10px;
-    margin-left: 10px;
-    transform: scale(1.3);
 
-
+button #save:hover{
+    background-color: red;
+    cursor: pointer;
 
 }
 
-/*MEDIA QUERY TAMAÑO DE PRESENTACION PARA DISPOSITIVOS*/
+    #Download{
 
-@media screen and (max-width:630px) {
-    input{
-        width: 200px;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-weight: 500;
+        display: flex;
+        bottom: 40px;
+        right: 59px;
+        color: #fff;
+        position: absolute;
+        border-radius: 25px;
+        border: none;
+        background-color:rgb(150, 139, 139);
+        
     }
-}
 
-.gallery {
-        background-color: rgb(69, 69, 77);
+    #Download svg{
+        width: 15px;
+        height: 15px;
     }
 
+    button #Download:hover{
+        background-color: gray;
+        cursor: pointer;
+
+    }
+    #More_Option{
+
+        text-align: center;
+        font-weight: 500;
+        display: flex;
+        bottom: 40px;
+        right: 20px;
+        color: #fff;
+        position: absolute;
+        border-radius: 25px;
+        border: none;
+        background-color:rgb(150, 139, 139);
+        
+    }
+
+    #More_Option svg{
+        width: 15px!important;
+        height: 15px!important;
+        
+    }
+
+
+
+    button #More_Option:hover{
+        background-color: gray;
+        cursor: pointer;
+
+    }
 
